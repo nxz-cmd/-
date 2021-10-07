@@ -1,0 +1,8 @@
+/**app.wxss**/
+.hover{
+  	background-color: #c0c0c0 !important
+}
+
+.hoverText{
+	color: #ffffff !important
+}
