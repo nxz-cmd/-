@@ -181,177 +181,195 @@ Page({
     // }
 
 
-    //进行获得称号的判断
+    // //进行获得称号的判断
 
 
-    if(countList[0] == 2 && countList[3] == 4 ){
-      wx.showModal({
-        title: '恭喜您',
-      content: '您获得的是冠军称号：状元插金花！！！',
-      success: function (res) {
-        if (res.confirm) {//这里是点击了确定以后
-          console.log('用户点击确定')
 
-        } else {//这里是点击了取消以后
-          console.log('用户点击取消')
-        }
-      }  
-    })
-    }
-     else if(countList[3] == 6 ){
-      wx.showModal({
-        title: '恭喜您',
-      content: '您获得的是亚军称号：六杯红！！',
-      success: function (res) {
-        if (res.confirm) {
-          console.log('用户点击确定')
+    setTimeout(function () {
 
-        } else {
-          console.log('用户点击取消')
-        }
-      }  
-    })
-    }
-    else if(countList[0] == 6 ||countList[1] == 6 ||countList[2] == 6 ||countList[3] == 6 ||countList[4] == 6 ||countList[5] == 6){
-      wx.showModal({
-        title: '恭喜您',
-      content: '您获得的是季军称号：遍地锦！',
-      success: function (res) {
-        if (res.confirm) {
-          console.log('用户点击确定')
+      if(countList[0] == 2 && countList[3] == 4 ){
+        wx.showModal({
+          title: '恭喜您',
+        content: '您获得的是冠军称号：状元插金花！！！',
+        success: function (res) {
+          if (res.confirm) {//这里是点击了确定以后
+            console.log('用户点击确定')
+  
+          } else {//这里是点击了取消以后
+            console.log('用户点击取消')
+          }
+        }  
+      })
+      }
+       else if(countList[3] == 6 ){
+        wx.showModal({
+          title: '恭喜您',
+        content: '您获得的是亚军称号：六杯红！！',
+        success: function (res) {
+          if (res.confirm) {
+            console.log('用户点击确定')
+  
+          } else {
+            console.log('用户点击取消')
+          }
+        }  
+      })
+      }
+      else if(countList[0] == 6 ||countList[1] == 6 ||countList[2] == 6 ||countList[3] == 6 ||countList[4] == 6 ||countList[5] == 6){
+        wx.showModal({
+          title: '恭喜您',
+        content: '您获得的是季军称号：遍地锦！',
+        success: function (res) {
+          if (res.confirm) {
+            console.log('用户点击确定')
+  
+          } else {
+            console.log('用户点击取消')
+          }
+        }  
+      })
+      }
+      else if(countList[3] == 5){
+        wx.showModal({
+          title: '恭喜您',
+        content: '您获得的称号是：五红（称号榜第四）',
+        success: function (res) {
+          if (res.confirm) {
+            console.log('用户点击确定')
+  
+          } else {
+            console.log('用户点击取消')
+          }
+        }  
+      })
+      }
+     else  if(countList[0] == 5||countList[1] == 5||countList[2] == 5||countList[4] == 5||countList[5] == 5){
+        wx.showModal({
+          title: '恭喜您',
+        content: '您获得的称号是：五子登科（称号排行榜第五）',
+        success: function (res) {
+          if (res.confirm) {
+            console.log('用户点击确定')
+  
+          } else {
+            console.log('用户点击取消')
+          }
+        }  
+      })
+      }
+     else  if(countList[3] == 4){
+        wx.showModal({
+          title: '恭喜您',
+        content: '您获得的称号是：状元（称号排行榜第六）',
+        success: function (res) {
+          if (res.confirm) {
+            console.log('用户点击确定')
+  
+          } else {
+            console.log('用户点击取消')
+          }
+        }  
+      })
+      }
+      else if(countList[0] == 1 && countList[1] == 1&&countList[2] == 1 && countList[3] == 1&&countList[4] == 1 && countList[5] == 1 ){
+        wx.showModal({
+          title: '恭喜您',
+        content: '您获得的称号是：对堂（称号排行榜第七）',
+        success: function (res) {
+          if (res.confirm) {
+            console.log('用户点击确定')
+  
+          } else {
+            console.log('用户点击取消')
+          }
+        }  
+      })
+      }
+     else  if(countList[3] == 3){
+        wx.showModal({
+          title: '恭喜您',
+        content: '您获得的称号是：三红（称号排行榜第八）',
+        success: function (res) {
+          if (res.confirm) {
+            console.log('用户点击确定')
+  
+          } else {
+            console.log('用户点击取消')
+          }
+        }  
+      })
+      }
+     else  if(countList[0] == 4 || countList[1] == 4 || countList[2] == 4 || countList[3] == 4 || countList[4] == 4 || countList[5] == 4 ){
+        wx.showModal({
+          title: '恭喜您',
+        content: '您获得的称号是：四进（称号排行榜第九）',
+        success: function (res) {
+          if (res.confirm) {
+            console.log('用户点击确定')
+  
+          } else {
+            console.log('用户点击取消')
+          }
+        }  
+      })
+      }
+      else if(countList[3] == 2){
+        wx.showModal({
+          title: '恭喜您',
+        content: '您获得的称号是：二举（称号排行榜第十）',
+        success: function (res) {
+          if (res.confirm) {
+            console.log('用户点击确定')
+  
+          } else {
+            console.log('用户点击取消')
+          }
+        }  
+      })
+      }
+      else if(countList[3] == 1){
+        wx.showModal({
+          title: '恭喜您',
+        content: '您获得的称号是：一秀（称号排行榜第十一）',
+        success: function (res) {
+          if (res.confirm) {
+            console.log('用户点击确定')
+  
+          } else {
+            console.log('用户点击取消')
+          }
+        }  
+      })
+      }
+      else{
+        wx.showModal({
+          title: '太遗憾了',
+        content: '您没有博到饼',
+        success: function (res) {
+          if (res.confirm) {
+            console.log('用户点击确定')
+  
+          } else {
+            console.log('用户点击取消')
+          }
+        }  
+      })
+      }
 
-        } else {
-          console.log('用户点击取消')
-        }
-      }  
-    })
-    }
-    else if(countList[3] == 5){
-      wx.showModal({
-        title: '恭喜您',
-      content: '您获得的称号是：五红（称号榜第四）',
-      success: function (res) {
-        if (res.confirm) {
-          console.log('用户点击确定')
 
-        } else {
-          console.log('用户点击取消')
-        }
-      }  
-    })
-    }
-   else  if(countList[0] == 5||countList[1] == 5||countList[2] == 5||countList[4] == 5||countList[5] == 5){
-      wx.showModal({
-        title: '恭喜您',
-      content: '您获得的称号是：五子登科（称号排行榜第五）',
-      success: function (res) {
-        if (res.confirm) {
-          console.log('用户点击确定')
+      //要延时执行的代码
+     }, 850) //延迟时间 这里是1秒
 
-        } else {
-          console.log('用户点击取消')
-        }
-      }  
-    })
-    }
-   else  if(countList[3] == 4){
-      wx.showModal({
-        title: '恭喜您',
-      content: '您获得的称号是：状元（称号排行榜第六）',
-      success: function (res) {
-        if (res.confirm) {
-          console.log('用户点击确定')
 
-        } else {
-          console.log('用户点击取消')
-        }
-      }  
-    })
-    }
-    else if(countList[0] == 1 && countList[1] == 1&&countList[2] == 1 && countList[3] == 1&&countList[4] == 1 && countList[5] == 1 ){
-      wx.showModal({
-        title: '恭喜您',
-      content: '您获得的称号是：对堂（称号排行榜第七）',
-      success: function (res) {
-        if (res.confirm) {
-          console.log('用户点击确定')
 
-        } else {
-          console.log('用户点击取消')
-        }
-      }  
-    })
-    }
-   else  if(countList[3] == 3){
-      wx.showModal({
-        title: '恭喜您',
-      content: '您获得的称号是：三红（称号排行榜第八）',
-      success: function (res) {
-        if (res.confirm) {
-          console.log('用户点击确定')
 
-        } else {
-          console.log('用户点击取消')
-        }
-      }  
-    })
-    }
-   else  if(countList[0] == 4 || countList[1] == 4 || countList[2] == 4 || countList[3] == 4 || countList[4] == 4 || countList[5] == 4 ){
-      wx.showModal({
-        title: '恭喜您',
-      content: '您获得的称号是：四进（称号排行榜第九）',
-      success: function (res) {
-        if (res.confirm) {
-          console.log('用户点击确定')
 
-        } else {
-          console.log('用户点击取消')
-        }
-      }  
-    })
-    }
-    else if(countList[3] == 2){
-      wx.showModal({
-        title: '恭喜您',
-      content: '您获得的称号是：二举（称号排行榜第十）',
-      success: function (res) {
-        if (res.confirm) {
-          console.log('用户点击确定')
 
-        } else {
-          console.log('用户点击取消')
-        }
-      }  
-    })
-    }
-    else if(countList[3] == 1){
-      wx.showModal({
-        title: '恭喜您',
-      content: '您获得的称号是：一秀（称号排行榜第十一）',
-      success: function (res) {
-        if (res.confirm) {
-          console.log('用户点击确定')
 
-        } else {
-          console.log('用户点击取消')
-        }
-      }  
-    })
-    }
-    else{
-      wx.showModal({
-        title: '太遗憾了',
-      content: '您没有博到饼',
-      success: function (res) {
-        if (res.confirm) {
-          console.log('用户点击确定')
 
-        } else {
-          console.log('用户点击取消')
-        }
-      }  
-    })
-    }
+
+
+
 
 
       // title: '恭喜您',
@@ -369,6 +387,16 @@ Page({
     return valueList
   },
 
+  // jieguo:function(){
+
+  //     //   setInterval(function () {
+  //     // //循环执行代码
+  //     // }, 1000) //循环时间 这里是1秒  
+
+
+    
+
+  // },
   //根据骰子的最终位置和旋转角度创建动画数据
   createAnimationData:function(left,top,rotate){
     var animation = wx.createAnimation({
@@ -384,6 +412,13 @@ Page({
 
   //动画结束的回调函数
   end:function(){
+
+
+
+
+
+
+
     //每次动画结束，把clicked置回false
 
 
@@ -400,10 +435,11 @@ Page({
     //   }
     // })
 
-
     this.setData({
       clicked:false
     })
+
+
   }
 
 })
